@@ -14,7 +14,8 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "illuminate/support": ">=4.0"
+        "illuminate/support": ">=4.0",
+        "ixudra/curl": "6.*"
     },
     "autoload": {
         "psr-4": {

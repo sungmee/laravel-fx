@@ -11,18 +11,15 @@ class Fixer extends Fx implements GatewayInterface
 {
 	public function atm(string $base = null, string $symbols = null, int $minutes = null)
 	{
-		$base 	 = $base ?: $this->base;
-		$symbols = $symbols ?: $this->symbols;
+		$data = [
+			'base' 	  => $base ?: $this->base,
+			'symbols' => $symbols ?: $this->symbols
+		];
 		$minutes = $minutes ?: $this->minutes;
 		$key 	 = "Fixer|$base|$symbols";
 
-        return Cache::remember($key, $minutes, function() use($base, $symbols) {
-                $data = [
-					'base' 	  => $base,
-					'symbols' => $symbols
-				];
-
-				$res = Curl::to('https://api.fixer.io/latest')
+        return Cache::remember($key, $minutes, function() use($data) {
+                $res = Curl::to('https://api.fixer.io/latest')
 					->withData($data)
 					->asJson()
 					->get();
