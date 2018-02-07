@@ -30,7 +30,7 @@ class Fx
 	 *
 	 * @return $this
 	 */
-    public function __construct()
+	public function __construct()
     {
 		return new Gateways\Fixer;
 	}
@@ -42,7 +42,7 @@ class Fx
 	 * @param  array	$agrs	参数
 	 * @return mix
      */
-    public function __call($name, $args)
+	public function __call($name, $args)
     {
 		// 货币兑换，如 usd2cny(100) 为 100 美元对人民币
         $field = preg_match('/^([a-z]{3})2([a-z]{3})/', $name, $matches);
