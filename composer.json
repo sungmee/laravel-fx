@@ -1,0 +1,36 @@
+{
+    "name": "sungmee/laravel-fx",
+    "description": "Laravel Foreign exchange Package.",
+    "keywords": ["packages", "laravel", "FX"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/sungmee/laravel-fx",
+    "time": "2018-02-07 15:12:27",
+    "authors": [
+        {
+            "name": "SUNGMEE",
+            "email": "mo@lxooo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": ">=4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sungmee\\LaraFX\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sungmee\\LaraFX\\ServiceProvider"
+            ],
+            "aliases": {
+                "Fx": "Sungmee\\LaraFX\\Facade"
+            }
+        }
+    }
+}
