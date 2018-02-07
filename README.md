@@ -23,10 +23,15 @@ $money = 100;
 \Fx::usd2jpy(100);
 ...
 
+// 更改默认变量
+\Fx::setBase('CNY');
+\Fx::setSymbols('USD');
+...
+
 // 更改默认查询网关
 \Fx::gateway('Fixer')->atm();
 ```
 
-## 扩展
+## 扩展网关
 
 在 \Sungmee\LaraFx\Gateways 下新增网关，需要 继承 Fx 类和 GatewayInterface 接口。
