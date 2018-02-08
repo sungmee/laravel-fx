@@ -8,7 +8,21 @@ Laravel Foreign exchange Package.
 
 > composer require sungmee/laravel-fx
 
-就这些了。
+### Laravel v5.5 以上版本的安装就这些了。
+
+### Laravel 5.5 以下版本还要继续操作：
+
+然后在 Laravel 配置文件 `config/app.php` 中加入：
+
+```PHP
+'providers' => [
+    Sungmee\LaraFX\ServiceProvider::class,
+]
+
+'aliases' => [
+    'FX' => Sungmee\LaraFX\Facade::class,
+]
+```
 
 ## 使用
 
