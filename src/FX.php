@@ -16,7 +16,7 @@ class FX
      *
      * @var string
      */
-    public $symbols = 'CNY';
+    public $symbols;
 
     /**
      * 缓存时间，单位秒

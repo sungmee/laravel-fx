@@ -11,10 +11,13 @@ class Fixer extends FX implements GatewayInterface
 {
 	public function atm(string $base = null, string $symbols = null, int $minutes = null)
 	{
-		$data = [
-			'base' 	  => $base ?: $this->base,
-			'symbols' => $symbols ?: $this->symbols
-		];
+		$data = ['base' => $base ?: $this->base];
+
+		if (!empty($symbols))
+			$data['symbols'] = $symbols;
+		elseif (!empty($this->symbols))
+			$data['symbols'] = $this->symbols;
+
 		$minutes = $minutes ?: $this->minutes;
 		$key 	 = "Fixer|$base|$symbols";
 
