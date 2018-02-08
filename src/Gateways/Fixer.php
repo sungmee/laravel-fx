@@ -18,15 +18,11 @@ class Fixer extends FX implements GatewayInterface
 		$minutes = $minutes ?: $this->minutes;
 		$key 	 = "Fixer|$base|$symbols";
 
-		return $data;
-
-        // return Cache::remember($key, $minutes, function() use($data) {
-        //         $res = Curl::to('https://api.fixer.io/latest')
-		// 			->withData($data)
-		// 			->asJson()
-		// 			->get();
-
-        //         return json_decode($res);
-        // });
+        return Cache::remember($key, $minutes, function() use($data) {
+                return Curl::to('https://api.fixer.io/latest')
+					->withData($data)
+					->asJson()
+					->get();
+        });
 	}
 }

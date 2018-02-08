@@ -32,7 +32,7 @@ class FX
      */
     public function __construct()
     {
-    	return new Gateways\Fixer;
+    	//
     }
 
     /**

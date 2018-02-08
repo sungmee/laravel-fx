@@ -29,7 +29,7 @@ class ServiceProvider extends LSP
     public function register()
     {
         $this->app->singleton('FX', function () {
-            return new FX;
+            return new Gateways\Fixer;
         });
     }
 
