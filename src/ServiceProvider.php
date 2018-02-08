@@ -1,6 +1,6 @@
 <?php
 
-namespace Sungmee\LaraFx;
+namespace Sungmee\LaraFX;
 
 use Illuminate\Support\ServiceProvider as LSP;
 
@@ -28,8 +28,8 @@ class ServiceProvider extends LSP
      */
     public function register()
     {
-        $this->app->singleton('Fxr', function () {
-            return new Fxr;
+        $this->app->singleton('FX', function () {
+            return new FX;
         });
     }
 
@@ -38,6 +38,6 @@ class ServiceProvider extends LSP
      */
     public function provides()
     {
-        return array('Fxr');
+        return ['FX'];
     }
 }

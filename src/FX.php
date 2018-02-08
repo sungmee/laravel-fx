@@ -1,8 +1,8 @@
 <?php
 
-namespace Sungmee\LaraFx;
+namespace Sungmee\LaraFX;
 
-class Fxr
+class FX
 {
     /**
      * 汇率基础货币

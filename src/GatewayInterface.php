@@ -1,6 +1,6 @@
 <?php
 
-namespace Sungmee\LaraFx;
+namespace Sungmee\LaraFX;
 
 interface GatewayInterface
 {

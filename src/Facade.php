@@ -1,6 +1,6 @@
 <?php
 
-namespace Sungmee\LaraFx;
+namespace Sungmee\LaraFX;
 
 use Illuminate\Support\Facades\Facade as LF;
 
@@ -10,6 +10,6 @@ class Facade extends LF {
      */
     protected static function getFacadeAccessor()
     {
-        return 'Fxr';
+        return 'FX';
     }
 }

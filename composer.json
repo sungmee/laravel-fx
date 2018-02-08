@@ -30,7 +30,7 @@
                 "Sungmee\\LaraFX\\ServiceProvider"
             ],
             "aliases": {
-                "Fxr": "Sungmee\\LaraFX\\Facade"
+                "FX": "Sungmee\\LaraFX\\Facade"
             }
         }
     }
