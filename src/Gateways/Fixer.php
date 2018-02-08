@@ -2,12 +2,12 @@
 
 namespace Sungmee\LaraFx\Gateways;
 
-use Sungmee\LaraFx\Fx;
+use Sungmee\LaraFx\Fxr;
 use Ixudra\Curl\Facades\Curl;
 use ungmee\LaraFx\GatewayInterface;
 use Illuminate\Support\Facades\Cache;
 
-class Fixer extends Fx implements GatewayInterface
+class Fixer extends Fxr implements GatewayInterface
 {
 	public function atm(string $base = null, string $symbols = null, int $minutes = null)
 	{

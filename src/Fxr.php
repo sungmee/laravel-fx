@@ -2,7 +2,7 @@
 
 namespace Sungmee\LaraFx;
 
-class Fx
+class Fxr
 {
     /**
      * 汇率基础货币

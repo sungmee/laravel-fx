@@ -28,8 +28,8 @@ class ServiceProvider extends LSP
      */
     public function register()
     {
-        $this->app->singleton('Fx', function () {
-            return new Fx;
+        $this->app->singleton('Fxr', function () {
+            return new Fxr;
         });
     }
 
@@ -38,6 +38,6 @@ class ServiceProvider extends LSP
      */
     public function provides()
     {
-        return array('Fx');
+        return array('Fxr');
     }
 }

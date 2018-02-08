@@ -10,6 +10,6 @@ class Facade extends LF {
      */
     protected static function getFacadeAccessor()
     {
-        return 'Fx';
+        return 'Fxr';
     }
 }
