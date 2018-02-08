@@ -4,7 +4,7 @@ namespace Sungmee\LaraFX\Gateways;
 
 use Sungmee\LaraFX\FX;
 use Ixudra\Curl\Facades\Curl;
-use ungmee\LaraFX\GatewayInterface;
+use Sungmee\LaraFX\GatewayInterface;
 use Illuminate\Support\Facades\Cache;
 
 class Fixer extends FX implements GatewayInterface
